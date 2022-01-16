@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/* Nav Section Start */
+.header-area{
+    width: 100%;
+    background-color: #2D25A0;
+    padding-top: 42px;
+}
+.header-area:hover {
+    background-color: #E02C6D;
+}
+.header-area:hover button{
+    background-color: #2D25A0;
+}
+.header-area:hover .sign-area{
+    background-color: #2D25A0;
+}
+.nav-area{
+    display: flex;
+    width: 1160px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-area .nav-items a{
+    margin-right: 25px;
+}
+.nav-area a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+.nav-area .sign-area{
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border:none;
+}
+/* Poster Area Start */
+.poster-area{
+    width: 1160px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 67px 0px 86px 0px;
+}
+.header-caption{
+    margin-top: 50px;
+}
+.header-caption h2{
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+}
+.header-caption button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+}
+.header-caption button i{
+    margin-left: 10px;
+}
+.header-image img{
+    height: 438px;
+    width: 556px;
+}
+
+/* Start Player Section */
+.container{
+    width: 1050px;
+    margin: 0 auto;
+    padding: 70px 0px 90px 0px;
+}
+.container .players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 27px;
+}
+.players .player{
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+
+}
+.players .player-d{
+    margin-top: 80px;
+}
+.player-picture img{
+    height: 256px;
+    width: 300px;
+}
+.player-info h3{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.player-info p{
+    color: #6C6C6C;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+/* Start Icon Player  */
+.icon-player{
+    display: flex;
+    width: 1180px;
+    margin: 0 auto;
+}
+.icon-player .icon-player-caption{
+    width: 50%;
+    margin-top: 50px;
+}
+.icon-player .icon-player-caption h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.icon-player .icon-player-caption p{
+    color: #6C6C6C;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    width: 400px;
+    padding: 15px 0;
+}
+.icon-player .icon-player-caption button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+}
+.icon-player .icon-player-caption button i{
+    margin-left: 10px;
+}
+.icon-player-picture img{
+    height: 427px;
+    width: 567px;
+}
+/* Start Footer Section */
+.logo-area{
+    width: 100;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0 0;
+}
+.logo-area img{
+    width: 480px;
+    height: 110px;
+}
+.contact-area{
+    display: flex;
+    justify-content: center;
+}
+.contact-area i{
+    background-color: lightgrey;
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.copyright-area{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+}
+
+/* Media Query */
+@media (max-width: 688px){
+    .nav-area{
+        width: 100%;
+    }
+    .nav-items{
+        display: none;
+    }
+    .sign-area{
+       margin-left: auto;
+    }
+    .poster-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header-caption h2{
+        font-size: 50px;
+        padding: 0 20px;
+    }
+    .header-caption button{
+        margin-left: 20px;
+    }
+    .header-image{
+        width: 100%;
+        padding: 10px 30px;
+    }
+    .header-image img{
+        height: 300px;
+        width: 350px;
+        margin-top: 30px;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container .player-d{
+        margin-top: 0px;
+    }
+    .icon-player{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 500px;
+ 
+        
+    }
+    .icon-player-caption{
+        text-align: center;
+        
+    }
+    .icon-player .icon-player-caption h2{
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    .icon-player .icon-player-caption p{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .icon-player .icon-player-caption button{
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+    .icon-player-picture img{
+        width: 330px;
+        height: auto;
+       margin-left: 15px;
+    }
+    .logo-area img{
+        width: 250px;
+        height: auto;
+    }
+}
